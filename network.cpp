@@ -15,6 +15,7 @@ void dfs(int node, int n, vector<vector<int>> &computers) {
         }
     }
 }
+
 int solution(int n, vector<vector<int>> computers) {
     int answer = 0;
     

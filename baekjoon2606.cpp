@@ -15,7 +15,7 @@ void dfs(int node) {
     visited[node] = 1;
 
     for (int i = 1; i <= N; i++) {
-        // cout <<"node " << node << " - " << i << "\n";
+        cout <<"node " << node << " - " << i << "\n";
 
         if (!visited[i] && map[node][i] == 1) {
             count++;

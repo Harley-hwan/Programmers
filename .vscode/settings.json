@@ -8,7 +8,10 @@
     "iosfwd": "cpp",
     "array": "cpp",
     "initializer_list": "cpp",
-    "utility": "cpp"
+    "utility": "cpp",
+    "map": "cpp",
+    "random": "cpp",
+    "vector": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled",
   "python.testing.unittestArgs": [
