@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -9,15 +9,15 @@ using namespace std;
 
 // 펜윅 트리: 세그먼트 트리에 비해 메모리 소모량 적고, 코드 간단.
 // 세그먼트 트리에서 한단계 응용된 자료구조.
+// 1. 펜윅트리는 비트를 이용해서 생성하게 된다.
+// 2. 각 Index를 2진수로 표현했을 때, '1'이 존재하는 가장 최하위 비트의 값을 찾는다. = u
+// 3. 해당 Index부터 u칸 앞까지의 구간연산에 대한 결과값을 갖는다.
 
 long long Fenwick_Tree[200001], depth[200001];
 long long tin[200001], tout[200001];
 int n, c, u, v, q;
 int cnt = 0;
 vector<int> g[200001];
-// 1. 펜윅트리는 비트를 이용해서 생성하게 된다.
-// 2. 각 Index를 2진수로 표현했을 때, '1'이 존재하는 가장 최하위 비트의 값을 찾는다. = u
-// 3. 해당 Index부터 u칸 앞까지의 구간연산에 대한 결과값을 갖는다.
 
 void dfs(int x) {
     tin[u] = ++cnt;
