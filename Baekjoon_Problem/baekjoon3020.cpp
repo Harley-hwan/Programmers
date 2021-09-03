@@ -5,7 +5,6 @@
 
 using namespace std;
 
-typedef long long ll;
 // 백준 3020번: 개똥벌레
 vector<int> v;
 
@@ -13,15 +12,15 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
 
-    ll N, H;
+    int N, H;
     cin >> N >> H;
 
-    ll arr[H][N];
+    int arr[H][N];
 
     memset(arr, 0, sizeof(arr));
-    ll num, index;
+    int num, index;
 
-    for (ll i = 0; i < N; i++) {
+    for (int i = 0; i < N; i++) {
         if (i % 2 == 0) {    
             cin >> num;
             index = H-1;
@@ -39,24 +38,25 @@ int main() {
             }
         }
     }
-    ll count;
-    for (ll i = 0; i < H; i++) {
+    int count;
+
+    for (int i = 0; i < N; i++) {
         count = 0;
-        for (ll j = 0; j < N; j++) {
+        for (int j = 0; j < H; j++) {
             if (arr[i][j] == 1) count++;
         }
         v.push_back(count);
     }
-    sort(v.begin(), v.end());
+    sort(v.rbegin(), v.rend());
+    
+    int MIN_count;
 
-    ll MINN = v[0];
-    ll MINN_count = 0;
-    for(ll i = 0; i < v.size(); i++) {
+    int MINN = v[0];
+    for(int i = 0; i < H; i++) {
 
-        if(MINN == v[i]) MINN_count++;
     }
-    //int MIN_count = count(v.begin(), v.end(), MINN);
-    cout << MINN << " " << MINN_count << "\n";
+    MIN_count = count(v.begin(), v.end(), 3);
+    cout << MINN << " " << MIN_count << "\n";
 
     return 0;
 }
