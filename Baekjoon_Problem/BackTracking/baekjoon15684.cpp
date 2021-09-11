@@ -18,7 +18,9 @@ using namespace  std;
 // 현재 위치에서 사다리를 한 칸 내려간다. (i+1, j)
 // 위 과정을 가로줄 H 까지 반복
 
-int n, m, h, ans=4;
+// N: 세로, M: 가로,  H: 가로선 놓을수있는 위치 개수
+int n, m, h, ans=4; 
+
 bool a[30][10];
 
 bool ladder() {
