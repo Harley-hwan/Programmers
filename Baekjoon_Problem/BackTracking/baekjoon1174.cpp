@@ -41,7 +41,7 @@ int main() {
     // bfs
     while (!q.empty()) {
         long long a = q.front();
-        // cout << "a: " << q.front() << "\n";
+        cout << "a: " << q.front() << "\n";
         q.pop();
 
         // 0 ~ a의 일의 자리 숫자의 값 -1 까지 차례로 뒤에 붙임.
