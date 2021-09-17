@@ -22,8 +22,8 @@ int main() {
     for (int i = 0; i < n; i++) {
         if (arr[i] > answer) break;
         answer += arr[i];
-        //cout << "arr[i]: " << arr[i] << "\n";
-        //cout << "answer: " << answer << "\n";
+        cout << "arr[i]: " << arr[i] << "\n";
+        cout << "answer: " << answer << "\n";
     }
     cout << answer;
     return 0;

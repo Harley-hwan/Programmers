@@ -11,7 +11,7 @@ long long transform(int num, int n) {
     
     long res = 0;
     num *=n;
-    for (int cnt = 1; ;num /= n, cnt *=10) {res += (num % n) * cnt; }
+    for (int cnt = 1; num /= n; cnt *=10) {res += (num % n) * cnt; }
     
     return res;
 }
