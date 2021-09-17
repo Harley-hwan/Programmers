@@ -57,9 +57,9 @@ int main() {
     Tree trees[n+1];
 
     for (int i = 1; i <=n; i++) {
-        trees[trees[i]].root = i;
-        trees[trees[i]].left = NULL;
-        trees[trees[i]].right = NULL;
+        trees[i].root = i;
+        trees[i].left = NULL;
+        trees[i].right = NULL;
     }
 
     for (int i = 2; i<= n; i++) {
