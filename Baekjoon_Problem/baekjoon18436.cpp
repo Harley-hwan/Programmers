@@ -36,7 +36,7 @@ int main() {
             cout << count << "\n";
         }
         if (a == 3) {
-            for (int j = b; j <= c; j++) {`1`
+            for (int j = b; j <= c; j++) {
                 if (isOdd(arr[j])) count++;
             }
             cout << count << "\n";

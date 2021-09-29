@@ -60,6 +60,7 @@ int main() {
         trees[i].root = i;
         trees[i].left = NULL;
         trees[i].right = NULL;
+
     }
 
     for (int i = 2; i<= n; i++) {
