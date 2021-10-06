@@ -21,9 +21,9 @@ int main() {
     int answer = 1;
     for (int i = 0; i < n; i++) {
         if (arr[i] > answer) break;
-        answer += arr[i];
-        cout << "arr[i]: " << arr[i] << "\n";
-        cout << "answer: " << answer << "\n";
+        answer += arr[i];   
+        //cout << "arr[i]: " << arr[i] << "\n";
+        //cout << "answer: " << answer << "\n";
     }
     cout << answer;
     return 0;
@@ -40,6 +40,8 @@ int main() {
     // 다음 저울추가 5면 -> 5, 6, 7, 8, 9 무게를 만들 수 있다.
     // 따라서 1 ~ 9 무게 모두 만들 수 있다.
     // 하지만 다음 추가 6이면 무게 5는 불가능.
+
+
 
 // --------------------------------------------------
 // 메모리 초과

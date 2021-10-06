@@ -54,7 +54,7 @@ int main() {
         vfreq.push_back(make_pair(v[i], count));
         count = 1;
     }
-    vfreq.push_back(make_pair(v[v.size()-1], count));
+    vfreq.push_back(make_pair(v[v.size()-1], count));   // v.size()-2 까지만 숫자를 넣으므로, 마지막 인덱스의 숫자를 따로 수행해줌.
 
     sort(vfreq.begin(), vfreq.end(), compare);
 
