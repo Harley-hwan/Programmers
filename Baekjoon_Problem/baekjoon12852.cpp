@@ -56,6 +56,7 @@ int main() {
 
         cout << N << " ";
         N = before[N];
+        if (N < 1) break;
     }
 
     return 0;
