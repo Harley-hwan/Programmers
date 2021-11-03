@@ -6,13 +6,13 @@ using namespace std;
 
 int solution(string s) {
     string res = "";
-    int answer = 0;
     int temp_count = 1;
 
     int len = s.size();
     int answer = len;
 
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= len; i++) {
+
         string res = "";
         string subs = s.substr(0, i);
 
